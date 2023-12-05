@@ -1,0 +1,4 @@
+FROM OpenJDK-alpine
+ADD target/ProductService-0.01-SNAPSHOT.jar ProductService-0.01-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","ProductService-0.01-SNAPSHOT.jar"]
+EXPOSE 8080
